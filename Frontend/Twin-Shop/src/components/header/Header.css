@@ -1,0 +1,342 @@
+.html ,body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(67, 75, 85);
+}
+
+.header{
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: -100px;
+    z-index: 1000;
+}
+
+.adv-bar{
+   width: 100%;
+   height: 35%;
+   position: absolute;
+   display: flex;
+}
+
+.adv-image{ 
+   height:100%;
+   width: 100%;
+}
+
+.adv-image-hidden{
+    display: none;
+}
+
+.navbar{
+    width:100%;
+    height:30%;
+    top: 40%;
+    position:absolute;
+}
+
+.navbar-items-left{
+    width: 100%;
+    height: 100%;
+    left: 3cap;
+    position: absolute;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+}
+.navbar-items-right{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 3cap;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+.navbar img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.search-box{
+    display: flex;
+    position: absolute;
+    left: 22cap;
+    width: 25%;
+    height: 50%;
+    background: #57a5ff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px #666;
+
+}
+.search-box input{ 
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: transparent;
+    outline: none;
+    border: 0;
+    color: #fff;
+    font-size: medium;
+}
+.search-box input::placeholder{
+    color: #5f5959c4;
+}
+.search-box img{
+   width: 25px;
+   height: 25px;
+   padding: 3px 3px;
+}
+#logo,
+#logotxt{
+    width: 100px;
+    height: 120px;
+    
+}
+.nav-divider {
+    width: 1px;
+    height: 24px;
+    background-color: #b0b0b0;
+    margin: 0 16px;
+}
+.sticky-navbar{
+  display:flex;
+  align-items: center;
+  width: 80%;
+  height: 20%;
+  position: absolute;
+  top: 70%;
+  gap: 2%;
+  left:4cap;
+}
+.sticky-nav-item{
+    width: auto;
+    text-decoration: none;
+    color: rgb(29, 151, 151);
+    transition: color 0.3s ease;
+}
+
+.sticky-nav-item:hover{
+   color: rgb(118, 236, 236);
+}
+.sticky-nav-sub-items{
+    position:absolute;
+    top: 100%;
+    width: auto;
+    max-height: 73vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(52, 237, 250);
+    z-index: 1000;
+}
+.sticky-nav-sub-items a{
+ text-decoration: none;
+ font-size: medium;
+ padding: 2vh;
+ padding-right:5vh;
+transition: color 0.3s ease;
+}
+.sticky-nav-sub-items a:hover{
+ color: rgb(255, 0, 0);
+ background-color:rgb(0, 159, 252);
+}
+.mobile-items{
+  padding: 15px;
+  display: flex;
+  gap: 50px;
+  background-color: rgb(161, 241, 255);
+  position: absolute;
+  height: 70vh;
+  left: 13.5%;
+  top: 100%;
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+.category {
+  border: none;
+}
+
+.category li{
+list-style: none;
+cursor: pointer;
+transition: color 0.3s ease;
+padding:25px 0px;
+color: rgb(73, 89, 122);
+
+}
+.category li:hover{
+ color: rgb(255, 0, 0);
+}
+.category h3{
+    padding-left: 35px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+     white-space: nowrap;
+}
+
+.category h3:hover {
+   color: rgb(255, 0, 0);
+}
+.category span{
+    color: red;
+    padding: 5px;
+}
+.column {
+  flex: 1;           
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #276070;
+}
+.signin-login{
+    background-color: #00daf7;
+    position: relative;
+    border: 5px solid  #b0b0b0; 
+    border-radius: 12px;
+    padding: 35px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: auto;
+}
+#logo-arrow{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+#left-arrow{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+#login-logo{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 30%;
+}
+#login-logotxt{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 48%;
+}
+.signin-login h2{
+   font-size: large;
+   content: "hello";
+}
+.signin-login p{
+font-size: 14px;
+color: #666;    
+}
+.signin-login b{
+color: rgb(0, 38, 255);
+}
+.signin-login a{
+    text-align: center; 
+    text-decoration: none;
+    border: 5px solid #0354aa;
+    padding: 15px;
+    width: 90%;
+    background-color: #0051ff;
+    color: #ffffff;
+}
+.signin-login input{
+    font-size: medium;
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+}
+.user-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #276070;
+}
+.user-info{
+    background-color: #00daf7;
+    position: relative;
+    border: 5px solid  #b0b0b0; 
+    border-radius: 12px;
+    padding: 25px;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50vh;
+    height: auto;
+
+}
+.user-info input{
+    font-size: medium;
+    width: 100%;
+    padding: 1px 0px;
+    text-align: start;
+}
+.user-info a{
+    margin-top: 3vh;
+     text-align: center; 
+    text-decoration: none;
+    border: 5px solid #0354aa;
+    padding: 15px;
+    width: 90%;
+    background-color: #0051ff;
+    color: #ffffff;
+}
+.user-info-one-line{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.user-info-one-line label{
+    width: 20vh;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    letter-spacing: 0.3px;
+}
+.user-info-one-line input{
+    flex: 1;
+    padding: 0px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.user-info-one-line input:focus{
+     border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+.user-info-one-line input::placeholder{
+    color: #999;
+}
+.user-info-one-line input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+.user-info-one-line input[type="date"]{
+    height: 3vh;
+}
+#first-row{
+    margin-top: 5vh;
+}

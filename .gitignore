@@ -1,0 +1,120 @@
+## =========================
+## Visual Studio / ASP.NET
+## =========================
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache
+.vs/
+.vscode/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotCover
+*.dotCover
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# MSBuild logs
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+packages.lock.json
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Core
+appsettings.Development.json
+appsettings.Local.json
+
+# IIS / Express
+.vsconfig
+*.iisexpress
+
+# Publish
+**/Properties/PublishProfiles/
+
+# Web Deploy
+*.Publish.xml
+*.pubxml
+*.azurePubxml
+
+# EF Core
+Migrations/*.cs~
+__EFMigrationsHistory/
+
+# SQL / DB
+*.mdf
+*.ldf
+
+# Certificates
+*.pfx
+*.cer
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node modules (React uses npm/yarn)
+node_modules/
+
+# Build output
+build
+dist/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor files
+.vscode/
+.idea/
+
+# Misc
+*.log
+/.vs
