@@ -8,6 +8,9 @@ using System.Text;
 
 public class AuthService : IAuthService
 {
+    /// <summary>
+    /// 
+    /// </summary>
     private readonly IUserRepository _userRepository;
 
     public AuthService(IUserRepository userRepository)
