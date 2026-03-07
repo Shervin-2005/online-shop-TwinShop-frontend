@@ -27,7 +27,6 @@ html{
 
 input{
     background-color: #eee;
-    margin: 5px;
     padding: 10px 15px;
     border-radius: 5px;
 }
@@ -62,12 +61,12 @@ form{
 }
 
 .get-container{
-display: flex;
-justify-self: center;
-align-items: center;
-flex-wrap: wrap;
-width: 75%;
-margin: auto;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
 }
 
 .loading-container{
@@ -77,3 +76,19 @@ margin: auto;
     align-items: center;
     row-gap: 50px;
 }
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.search-buttons-container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+

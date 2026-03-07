@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
-import ItemProduct from "./ItemProduct";
 import "./Admin.css"
 import Loading from "./Loading";
+import ItemCategory from "./ItemCategory";
 import Search from "./Search";
 
-const GetAllProducts = ()=> {
+
+const GetAllCategories = ()=> {
     return (
+
         <div className="search-container">
             <div className="search-buttons-container">
             <Search/>
@@ -16,19 +18,15 @@ const GetAllProducts = ()=> {
             </div>
         <div className="loading-container">
         <div className="get-container">
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
+        <ItemCategory/>
+        <ItemCategory/>
+        <ItemCategory/>
+        <ItemCategory/>
+        <ItemCategory/>
         </div>
         </div>
         </div>
     );
 }
 
-export default GetAllProducts;
+export default GetAllCategories;
