@@ -1,5 +1,5 @@
 .ip-container{
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -11,6 +11,7 @@
     width: 250px;
     height: 400px;
     margin: 6px;
+    position:relative;
 }
 .ip-cta{
     display: flex;
@@ -70,9 +71,12 @@
     width: 100%;
 }
 
+
  .options{
     background-color: transparent;
     border-radius: 50%;
+    position: absolute;
+    left: 83%;
  }
 
  .options:hover{
@@ -80,6 +84,29 @@
     border-radius: 50%;
     transition: transform 300ms ease-in-out;
  }
+
+ 
+ .options-menu{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1000;
+    top: 4vh;
+    left:92%
+ }
+
+   .options-menu button:hover{
+    background-color: var(--primary-color-light);     
+    transition: transform 300ms ease-in-out;
+ }
+ .options-menu button{
+    gap: 0px;
+    margin:0px;
+    border-radius: 0px;
+    width: 80px;
+    background-color: var(--primary-color);
+ }
+
 
  .ip-cta-top span{
     background-color: red;

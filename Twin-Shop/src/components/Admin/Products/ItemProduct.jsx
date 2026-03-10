@@ -1,14 +1,22 @@
-import React from "react";
-import "./Admin.css";
+import React, { useState } from 'react';
+import ".././Admin.css"
 import "./ItemProduct.css";
-import imageTest from "./main.webp";
+import imageTest from ".././main.webp";
+import OptionsMenu from "./OptionsMenu";
 
 const ItemProduct = () => {
+      const [openOptions, OptionsOpenState] = useState(false);
     return (
         <div className="ip-container">
                  <div className="ip-cta-top">
-                    <span>20%</span>
-                    <button className="options">:</button>
+                    <span>20%</span>      
+                    <button className="options" onClick={() => OptionsOpenState(!openOptions)} >:   
+                    </button>
+                      {openOptions && (
+                       <div>
+               <OptionsMenu/> 
+                      </div>
+      )}
                 </div>
                 <img src={imageTest} alt="" />
                 <div className="ip-cta-category-brand">

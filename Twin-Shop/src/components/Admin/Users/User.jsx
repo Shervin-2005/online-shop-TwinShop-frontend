@@ -1,7 +1,7 @@
 import React from "react";
-import "./Admin.css";
+import ".././Admin.css"
 import "./User.css";
-import imageTest from "./profile.png";
+import imageTest from ".././profile.png";
 
 const ItemBrand = () => {
     return (

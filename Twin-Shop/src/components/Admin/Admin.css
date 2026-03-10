@@ -53,13 +53,6 @@ form{
     row-gap: 20px;
 }
 
-.put-container{
-    display: flex;   
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-}
-
 .get-container{
     display: flex;
     justify-self: center;
@@ -88,7 +81,14 @@ form{
 .search-buttons-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 90%;
     margin: auto;
-    width: 80%;
 }
 
+.search-box{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left: 40%;
+}

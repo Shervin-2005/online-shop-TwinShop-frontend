@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
-import "./Admin.css"
-import Loading from "./Loading";
+import ".././Admin.css"
+import Loading from "../Loading";
 import ItemCategory from "./ItemCategory";
-import Search from "./Search";
+import { Link } from "react-router-dom";
 
 
 const GetAllCategories = ()=> {
     return (
-
         <div className="search-container">
             <div className="search-buttons-container">
-            <Search/>
             <div>
                  <button>SORT By...</button>
-                <button>+</button>
+                 <Link to="/AddCategory">
+                    <button>+</button>
+                 </Link>
             </div>
             </div>
         <div className="loading-container">

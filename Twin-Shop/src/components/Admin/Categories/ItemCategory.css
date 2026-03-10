@@ -1,18 +1,18 @@
-.ib-container{
+.ic-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: white;
-    row-gap: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    padding: 20px 20px;
+    border-radius: 5px;
     width: 250px;
     height: 250px;
+    padding: 20px 20px;
     margin: 6px;
+    position: relative;
 }
-.ib-container img{
+.ic-container img{
     width: 200px;
     height: 200px;
     object-fit: contain;
@@ -25,6 +25,9 @@
     background-color: transparent;
     border-radius: 50%;
     margin-left:auto;
+    position: absolute;
+    left: 83%;
+    top: 0%;
     margin-bottom: auto;
  }
 
@@ -32,4 +35,26 @@
     background-color: rgba(27, 27, 27, 0.144);
     border-radius: 50%;
     transition: transform 300ms ease-in-out;
+ }
+
+ .category-options{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1000;
+    top: 3vh;
+    left:92%
+ }
+
+ 
+   .category-options button:hover{
+    background-color: var(--primary-color-light);     
+    transition: transform 300ms ease-in-out;
+ }
+ .category-options button{
+    gap: 0px;
+    margin:0px;
+    border-radius: 0px;
+    width: 80px;
+    background-color: var(--primary-color);
  }
