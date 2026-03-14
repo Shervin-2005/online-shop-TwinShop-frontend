@@ -72,14 +72,19 @@
 }
 
 
- .options{
+ .product-options{
     background-color: transparent;
+    font-weight: bold;
+    width: 4vh;
+    height: 4vh;
     border-radius: 50%;
+    border: none;
     position: absolute;
     left: 83%;
+    top: 2%;
  }
 
- .options:hover{
+ .product-options:hover{
     background-color: rgba(27, 27, 27, 0.144);
     border-radius: 50%;
     transition: transform 300ms ease-in-out;
@@ -91,7 +96,7 @@
     position: absolute;
     flex-direction: column;
     z-index: 1000;
-    top: 4vh;
+    top: 3vh;
     left:92%
  }
 
@@ -103,7 +108,8 @@
     gap: 0px;
     margin:0px;
     border-radius: 0px;
-    width: 80px;
+    width: 9vh;
+    height: 3vh;
     background-color: var(--primary-color);
  }
 
@@ -111,6 +117,9 @@
  .ip-cta-top span{
     background-color: red;
     padding: 5PX;
+    position: absolute;
+    top: 2%;
+    left: 3%;
     border-radius: 10PX;
     font-weight: bold;
     font-size: large;

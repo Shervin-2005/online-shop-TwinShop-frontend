@@ -21,7 +21,7 @@ const PutProduct = ()=> {
             <input type="number" placeholder="Secondary Price" name="price"/>
             <input type="file" text="Main Image" name="file"/>
             <input type="file" text="Side Images" name="file"/>
-            <button type="submit">Edit Product</button>
+            <button className="submit-button" type="submit">Edit Product</button>
            </form>
         </div>
     );

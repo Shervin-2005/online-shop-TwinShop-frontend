@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './body.css';
+import './SlideShow.css';
 import chevronRight from "../../images/chevron-right.svg";
 import chevronLeft from "../../images/chevron-left.svg";
 
@@ -31,8 +31,8 @@ export const SlideShow = ({ data }) => {
   }, [data.length]);
 
   return (
-    <div className="slide-show">
-      <button className="arrow arrow-left" onClick={prevSlide}>
+    <div className="body-slide-show-container">
+      <button className="slide-arrow slide-arrow-left" onClick={prevSlide}>
           <img className='chevron' src={chevronLeft} alt="chevron-left" />
         </button>
       <div className="slideshow-div" style={{ transform: `translateX(${-100 * slide}%)`}}>
@@ -40,15 +40,15 @@ export const SlideShow = ({ data }) => {
           <img key={idx} src={item.src} alt={item.alt} className="slide"/>
         ))}
       </div>
-      <button className="arrow arrow-right" onClick={nextSlide}>
+      <button className="slide-arrow slide-arrow-right" onClick={nextSlide}>
           <img className='chevron' src={chevronRight} alt="chevron-right" />
         </button>
-      <span className="indicators">
+      <span className="slide-indicators">
         {data.map((_, idx) => (
           <button
             key={idx}
             onClick={() => { setSlide(idx); resetInterval(); }}
-            className={slide === idx ? "indicator" : "indicator indicator-inactive"}
+            className={slide === idx ? "slide-indicator" : "slide-indicator slide-indicator-inactive"}
           />
         ))}
       </span>

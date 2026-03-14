@@ -1,15 +1,18 @@
 import React from "react";
 import "./Posters.css"
+import ".././Admin.css"
 import Poster from "./Poster";
+import { Link } from "react-router-dom";
 
 const Posters = () =>{
     return(
-        <div className="search-container">
         <div className="loading-container">
         <div className="slide-show-container">
             <div className="slide-show-top">
                 <h2 className="title">Slide Show</h2>
-            <button className="add-button">➕</button>
+                <Link  target="_blank" to="/AddPoster">
+                    <button className="add-button">➕</button>
+                </Link>
             </div>
             <div className="slides">
                     <Poster/>
@@ -37,7 +40,9 @@ const Posters = () =>{
         <div className="posters-1-container">
              <div className="posters-1-top">
                 <h2 className="title">Poster Section 1</h2>
-            <button className="add-button">➕</button>
+            <Link  target="_blank" to="/AddPoster">
+                    <button className="add-button">➕</button>
+                </Link>
             </div>
             <div className="posters-1">
                     <Poster/>
@@ -51,7 +56,9 @@ const Posters = () =>{
          <div className="posters-1-container">
              <div className="posters-1-top">
                 <h2 className="title">Poster Section 2</h2>
-            <button className="add-button">➕</button>
+            <Link  target="_blank" to="/AddPoster">
+                    <button className="add-button">➕</button>
+                </Link>
             </div>
             <div className="posters-1">
                     <Poster/>
@@ -62,7 +69,6 @@ const Posters = () =>{
             </div>
         </div>
         
-        </div>
         </div>
     );
 }

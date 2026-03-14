@@ -11,7 +11,7 @@ const GetAllCategories = ()=> {
             <div className="search-buttons-container">
             <div>
                  <button>SORT By...</button>
-                 <Link to="/AddCategory">
+                 <Link  target="_blank" to="/AddCategory">
                     <button>+</button>
                  </Link>
             </div>

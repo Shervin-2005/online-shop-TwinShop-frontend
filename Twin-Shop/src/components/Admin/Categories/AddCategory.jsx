@@ -9,7 +9,7 @@ const AddCategory = ()=> {
            <form>
             <input type="text" placeholder="Title" name="title"/>
             <input type="file" text="Image" name="file"/>
-            <button type="submit">Add Category</button>
+            <button type="submit" className="submit-button">Add Category</button>
            </form>
         </div>
     );

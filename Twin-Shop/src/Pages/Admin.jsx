@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import '.././App.css' 
+import "../components/Admin/Admin.css"
 //components
 import GetAllProducts from "../components/Admin/Products/GetAllProducts.jsx";
 import AddProduct from "../components/Admin/Products/AddProduct.jsx";
@@ -10,19 +11,23 @@ import GetAllCategories from "../components/Admin/Categories/GetAllCategories.js
 import GetAllBrands from "../components/Admin/Brands/GetAllBrands.jsx";
 import GetAllUsers from "../components/Admin/Users/GetAllUsers.jsx"
 import Posters from "../components/Admin/Posters/Posters.jsx";
+import Advertisements from "../components/Admin/Advertisement/Advertisements.jsx";
 
 function Admin() {
 
-  const [showComponent, setShowComponent] = useState({
-    getProducts: false,
-    getCategories: false,
-    getBrands: false,
-    getUsers: false,
-    getPosters:false,
-  });
+  const [activeComponent, setActiveComponent] = useState('');
+  
 
   const btnHandler = (event) => {
-    setShowComponent({ ...showComponent, [event.target.name]: !showComponent[event.target.name] });
+    const componentName = event.target.name;
+    
+    // If the clicked component is already active, do nothing
+    if (componentName === activeComponent) {
+      return;
+    }
+
+    // Set the clicked component as active and others as inactive
+    setActiveComponent(componentName);
   };
 
   return (
@@ -34,14 +39,15 @@ function Admin() {
                 <button name="getUsers" onClick={btnHandler}>Users</button>
                 <button name="getPosters" onClick={btnHandler}>Posters</button>
                 <button name="getMessages" onClick={btnHandler}>Messages</button>
-                <button name="getAdvertisements">Advertisements</button> 
+                <button name="getAdvs" onClick={btnHandler}>Advertisements</button> 
                 <button name="other" onClick={btnHandler}>other</button>
               </div>
-              {showComponent.getProducts && <GetAllProducts key="get-products" />}
-              {showComponent.getCategories && <GetAllCategories key="get-categories" />}
-              {showComponent.getBrands && <GetAllBrands key="get-brands" />}
-              {showComponent.getUsers && <GetAllUsers key="get-users" />}
-              {showComponent.getPosters && <Posters key="get-posters" />}
+             {activeComponent === 'getProducts' && <GetAllProducts key="get-products" />}
+              {activeComponent === 'getCategories' && <GetAllCategories key="get-categories" />}
+              {activeComponent === 'getBrands' && <GetAllBrands key="get-brands" />}
+              {activeComponent === 'getUsers' && <GetAllUsers key="get-users" />}
+              {activeComponent === 'getPosters' && <Posters key="get-posters" />}
+              {activeComponent === 'getAdvs' && <Advertisements key="get-advs"/>}
             </div>
   );
 }

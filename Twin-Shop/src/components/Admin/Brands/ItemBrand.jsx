@@ -8,7 +8,7 @@ const ItemBrand = () => {
         const [openOptions, OptionsOpenState] = useState(false);
     return (
         <div className="ib-container">
-           <button className="options" onClick={() => OptionsOpenState(!openOptions)} >:   
+           <button className="brand-options" onClick={() => OptionsOpenState(!openOptions)} >:   
                                </button>
                                  {openOptions && (
                                   <div>

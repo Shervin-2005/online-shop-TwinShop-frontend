@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ItemProduct from "./ItemProduct";
-import ".././Admin.css"
+import "./GetAllProducts.css"
 import Loading from "../Loading";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const GetAllProducts = ()=> {
             <div className="search-buttons-container">
                  <input placeholder="Type SomeThing in Here..." className="search-box"/>
                  <button>SORT By...</button>
-                 <Link to="/AddProduct">
+                 <Link  target="_blank" to="/AddProduct">
                  <button>+</button>
                  </Link>
             </div>
@@ -30,5 +30,4 @@ const GetAllProducts = ()=> {
         </div>
     );
 }
-
 export default GetAllProducts;

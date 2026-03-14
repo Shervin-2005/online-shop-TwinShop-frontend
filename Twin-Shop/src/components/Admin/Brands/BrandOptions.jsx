@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const BrandOptions = ()=> {
     return (
-        <div className="brand-options">
-            <Link to="/PutBrand">
+        <div className="options-menu">
+            <Link  target="_blank" to="/PutBrand">
                 <button style={{ borderBottom: '1px solid black' }}>Edit</button>
             </Link>
             <Link>

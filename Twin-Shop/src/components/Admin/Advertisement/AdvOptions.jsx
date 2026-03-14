@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import "./ItemProduct.css"
+import "./Advertisement.css"
 import { Link } from "react-router-dom";
 
-const OptionsMenu = ()=> {
+const PosterOptions = ()=> {
     return (
-        <div className="options-menu">
-            <Link to="/PutProduct"  target="_blank">
+        <div className="adv-options-menu">
+            <Link  target="_blank" to="/EditAdv">
                 <button style={{ borderBottom: '1px solid black' }}>Edit</button>
             </Link>
             <Link>
@@ -15,4 +15,4 @@ const OptionsMenu = ()=> {
     );
 }
 
-export default OptionsMenu;
+export default PosterOptions;

@@ -11,7 +11,6 @@ function StickyNavbar() {
           key={idx} 
           content={item.Category} 
           items={item.Items} 
-          className='sticky-nav-item' 
         />     
       ))}
     </nav>

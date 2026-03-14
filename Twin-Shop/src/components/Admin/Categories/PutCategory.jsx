@@ -1,5 +1,4 @@
 import React from "react";
-import ".././Admin.css"
 import "./EditCategory.css"
 
 const PutCategory = ()=> {
@@ -9,7 +8,7 @@ const PutCategory = ()=> {
            <form>
             <input type="text" placeholder="Title" name="title"/>
             <input type="file" text="Image" name="file"/>
-            <button type="submit">Edit Category</button>
+            <button type="submit" className="submit-button">Edit Category</button>
            </form>
         </div>
     );

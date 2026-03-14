@@ -8,7 +8,7 @@ const ItemCategory = () => {
     const [openOptions, OptionsOpenState] = useState(false);
     return (
         <div className="ic-container">
-                    <button className="options" onClick={() => OptionsOpenState(!openOptions)} >:   
+                    <button className="category-options" onClick={() => OptionsOpenState(!openOptions)} >:   
                     </button>
                       {openOptions && (
                        <div>

@@ -1,5 +1,5 @@
 import './body.css'; 
-import Pictures1 from './Pictures1.jsx';
+import Pictures1 from './AdvPic1.jsx';
 import data from "../../data/picturesData2.js"
 
 function PictureSection2(){

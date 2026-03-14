@@ -10,7 +10,7 @@ const ItemProduct = () => {
         <div className="ip-container">
                  <div className="ip-cta-top">
                     <span>20%</span>      
-                    <button className="options" onClick={() => OptionsOpenState(!openOptions)} >:   
+                    <button className="product-options" onClick={() => OptionsOpenState(!openOptions)} >:   
                     </button>
                       {openOptions && (
                        <div>

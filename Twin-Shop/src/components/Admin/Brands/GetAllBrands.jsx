@@ -11,7 +11,7 @@ const GetAllBrands = ()=> {
             <div className="search-buttons-container">
             <div>
                  <button>SORT By...</button>
-                 <Link to="/AddBrand">
+                 <Link  target="_blank" to="/AddBrand">
                 <button>+</button>
                 </Link>
             </div>

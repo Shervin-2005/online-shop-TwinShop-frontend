@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const PosterOptions = ()=> {
     return (
-        <div className="poster-options">
-            <Link to="/PutPoster">
+        <div className="poster-options-menu">
+            <Link  target="_blank" to="/EditPoster">
                 <button style={{ borderBottom: '1px solid black' }}>Edit</button>
             </Link>
             <Link>

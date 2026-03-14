@@ -20,41 +20,22 @@
     transition: 0.3s;
     cursor: pointer;
 }
-
- .options{
+ .category-options{
     background-color: transparent;
+    font-weight: bold;
+    width: 4vh;
+    height: 4vh;
     border-radius: 50%;
-    margin-left:auto;
+    border: none;
     position: absolute;
     left: 83%;
-    top: 0%;
-    margin-bottom: auto;
+    top: 2%;
  }
 
- .options:hover{
+ .category-options:hover{
     background-color: rgba(27, 27, 27, 0.144);
     border-radius: 50%;
     transition: transform 300ms ease-in-out;
  }
 
- .category-options{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    z-index: 1000;
-    top: 3vh;
-    left:92%
- }
-
  
-   .category-options button:hover{
-    background-color: var(--primary-color-light);     
-    transition: transform 300ms ease-in-out;
- }
- .category-options button{
-    gap: 0px;
-    margin:0px;
-    border-radius: 0px;
-    width: 80px;
-    background-color: var(--primary-color);
- }

@@ -1,5 +1,4 @@
 import React from "react";
-import ".././Admin.css"
 import "./AddProduct.css"
 
 const AddProduct = ()=> {
@@ -21,7 +20,7 @@ const AddProduct = ()=> {
             <input type="number" placeholder="Secondary Price" name="price"/>
             <input type="file" text="Main Image" name="file"/>
             <input type="file" text="Side Images" name="file"/>
-            <button type="submit">Add Product</button>
+            <button className="submit-button" type="submit">Add Product</button>
            </form>
         </div>
     );

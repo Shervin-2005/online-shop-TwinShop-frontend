@@ -1,24 +1,22 @@
 import './body.css'
-import {SlideShow} from "./ImageSlideShow.jsx";
+import {SlideShow} from "./SlideShow.jsx";
 import slides from '../../data/slideImagesData.js'
 import offerProducts from '../../data/slideOffersData.js'
-import pictures1 from '../../data/picturesData1.js'
-import Contents from '../../data/contentCreatorsData.js'
+import pictures1 from '../../data/AdvSec1Data.js'
+import Contents from '../../data/BrandsData.js'
 import OfferSlideShow from "./OfferSlideShow.jsx";
-import ButtonsSection2 from "./buttonsSection2.jsx";
-import ButtonsSection1 from "./buttonSection1.jsx";
-import PictureSection1 from './pictureSection1.jsx';
 import ProductSortSection from './ProductSortSection.jsx';
 import PictureSection2 from './pictureSection2.jsx';
 import PopularBrandsSection from './PopularBrandsSection.jsx';
+import Brands from './Brands.jsx';
+import AdvSec1 from './AdvSec1.jsx';
 function Body(){
    return(
         <div className="body">
-            <ButtonsSection1 data={Contents}/>
+            <Brands data={Contents}/>
             <SlideShow data={slides}/>
-            <ButtonsSection2 data={Contents}/>
+            <AdvSec1 data={pictures1}/>
             <OfferSlideShow data={offerProducts}/>
-            <PictureSection1 data={pictures1}/>
             <ProductSortSection/>
             <PictureSection2/>
             <PopularBrandsSection/>

@@ -9,7 +9,7 @@ const AddBrand = ()=> {
            <form>
             <input type="text" placeholder="Title" name="title"/>
             <input type="file" text="Image" name="file"/>
-            <button type="submit">Add Brand</button>
+            <button type="submit" className="submit-button">Add Brand</button>
            </form>
         </div>
     );

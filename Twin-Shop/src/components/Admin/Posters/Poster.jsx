@@ -7,7 +7,7 @@ const Poster = () =>{
           const [openOptions, OptionsOpenState] = useState(false);
     return(
         <div className="poster-container">
-             <button className="options" onClick={() => OptionsOpenState(!openOptions)} >:   
+             <button className="poster-options" onClick={() => OptionsOpenState(!openOptions)} >:   
                     </button>
                       {openOptions && (
                        <div>

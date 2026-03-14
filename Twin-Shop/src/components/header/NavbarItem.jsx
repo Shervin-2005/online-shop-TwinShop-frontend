@@ -12,22 +12,24 @@ import { Link } from "react-router-dom";
 import  './Header.css';
 function NavbarItems(){
   return (
-    <div>
+    <div className='navbar-items-container'>
+
       <div className='navbar-items-left'>
-        {<img src={LogoIcon} id='logo' alt='Twin Shop'/>}
-        {<img src={LogoTxtIcon} id='logotxt' alt='Twin Shop Logo'/>}  
-        <div className='search-box'>
-        <img src={SearchIcon} alt=""/>
-        <input type="text" placeholder='Search...'/>
+        <img src={LogoIcon} id='logo' alt='Twin Shop'/>
+        <img src={LogoTxtIcon} id='logotxt' alt='Twin Shop Logo'/> 
+        <div className='home-search-box-container'>
+            <input placeholder="Type SomeThing in Here..." className="home-search-box"/> 
         </div>
      </div>
+
+
      <div className='navbar-items-right'>
-        {<img src={BellIcon} alt='Bell'/>}
-        <Link to="/SigninLogin">
+         <img src={BellIcon} alt='Bell'/>
+        <Link target='_blank' to="/SigninLogin">
           <img src={UserIcon} alt="User" style={{ cursor: "pointer" }} />
        </Link>
          <span className="nav-divider"></span>
-        {<img src={ShopIcon} alt='Shop'/>}  
+        <img src={ShopIcon} alt='Shop'/> 
     </div>
    
    </div>

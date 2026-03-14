@@ -1,4 +1,4 @@
-.slide-show-container{
+.top-adv-container{
     display: flex;
     flex-direction: row;
     justify-self: center;
@@ -18,7 +18,7 @@
     color: darkblue;
 }
 
-.slides{
+.top-adv{
     margin: 14px;
     display: flex;
     justify-self: center;
@@ -28,7 +28,7 @@
     background-color: var(--primary-color);
 }
 
-.posters-1-container{
+.body-adv-container{
      display: flex;
     flex-direction: row;
     justify-self: center;
@@ -41,7 +41,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.posters-1-top{
+.adv-top{
      display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,7 +49,7 @@
     width: 100%;
 }
 
-.posters-1{
+.body-adv{
     margin: 14px;
     display: flex;
     justify-self: center;
@@ -58,7 +58,7 @@
     width: 100%;
 }
 
-.slide-show-top{
+.adv-top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
