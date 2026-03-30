@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import StickyNavdata from "../../data/StickyNavbarItems";
 import MobileProducts from './MobileProducts';
 import MobileProductsdata from '../../data/MobileProductsdata';
@@ -12,6 +12,12 @@ const StickyNavbarItems = (props) => {
     SubItemsOpenState(!openSubItems);
     currentChoose(item);
   };
+
+  useEffect(() =>{
+    if(!openStickyNav){
+      SubItemsOpenState(false);
+    }
+  },[openStickyNav]);
 
   return (
     <div className='sticky-nav-item-container'>

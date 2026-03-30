@@ -18,11 +18,16 @@ import PutBrand from "./components/Admin/Brands/PutBrand.jsx";
 import EditPoster from "./components/Admin/Posters/EditPoster.jsx"
 import AddAdv from "./components/Admin/Advertisement/AddAdv.jsx";
 import EditAdv from "./components/Admin/Advertisement/EditAdv.jsx";
+import AdvBar from "./components/header/AdvBar.jsx";
+import ProductPage from "./components/ProductPage/ProductPage.jsx";
+import GalleryPage from "./components/ProductPage/ProductGallery.jsx";
+import SearchPage from "./components/Search/SearchPage.jsx";
 
 function App() {
     return (
-    <div>
+    <div className="container">
     <Routes>
+      <Route path="/Product" element={<ProductPage/>}/>
       <Route path="/" element={<House/>}/>
       <Route path="/GetAllProducts" element={<GetAllProducts/>}/>
       <Route path="/PutProduct" element={<PutProduct/>} />
@@ -35,6 +40,8 @@ function App() {
        <Route path="/EditPoster" element={<EditPoster/>}/>
        <Route path="/AddAdv" element={<AddAdv/>}/>
        <Route path="/EditAdv" element={<EditAdv/>}/>
+        <Route path="/gallery" element={<GalleryPage/>} />
+        <Route path="/Search" element={<SearchPage/>} />
     </Routes>
     </div> 
   );

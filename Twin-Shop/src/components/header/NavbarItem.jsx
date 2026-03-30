@@ -18,7 +18,9 @@ function NavbarItems(){
         <img src={LogoIcon} id='logo' alt='Twin Shop'/>
         <img src={LogoTxtIcon} id='logotxt' alt='Twin Shop Logo'/> 
         <div className='home-search-box-container'>
+          <Link to="/Search" target='_blank'>
             <input placeholder="Type SomeThing in Here..." className="home-search-box"/> 
+          </Link>
         </div>
      </div>
 

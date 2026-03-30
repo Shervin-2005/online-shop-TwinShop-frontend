@@ -15,8 +15,10 @@ function Brands(){
         setSlide(prev => (prev === 0 ? prev : prev - 1));
       };
 return(
-    <div className='brands-container'>
-         <button className={slide===0 ? 'hidden':"content-arrow content-arrow-left"} onClick={prevSlide}>
+    <div className='brands-text-container'>
+          <h2>Popular Brands</h2>
+      <div className="brands-container">
+         <button className={slide===0 ? 'hidden':"brand-arrow brand-arrow-left"} onClick={prevSlide}>
                               <img className='chevron' src={chevronLeft} alt="chevron-left" />
                             </button>
         <ul className='brands-ul' style={{ transform: `translateX(${-5 * slide}%)`}}>
@@ -24,9 +26,10 @@ return(
                         <Brand key={idx} icon={item.src} alt={item.alt} className="Content" title={item.title}/>
                         ))}          
         </ul>
-                         <button className={slide===data.length-11? 'hidden': "content-arrow content-arrow-right"} onClick={nextSlide}>
+                         <button className={slide===data.length-11? 'hidden': "brand-arrow brand-arrow-right"} onClick={nextSlide}>
                                 <img className='chevron' src={chevronRight} alt="chevron-right" />
                             </button>
+                            </div>
     </div>
 );
 }

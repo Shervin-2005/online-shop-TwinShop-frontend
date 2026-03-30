@@ -1,0 +1,44 @@
+.search-page-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    gap: 0px;
+}
+
+.search-page-main-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-page-sort{
+display:flex;
+flex-direction: row;
+gap: 5px;
+}
+
+.search-page-sort p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.search-page-sort button{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.search-page-sort button:hover{
+    color: rgb(0, 136, 136);
+    transition: 200ms ease-in-out;
+}
+
+.search-page{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}

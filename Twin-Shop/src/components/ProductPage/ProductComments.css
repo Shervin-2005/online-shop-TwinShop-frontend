@@ -1,0 +1,96 @@
+.product-comments-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-top: 1px solid rgba(0, 0, 0, 0.199);
+    margin: 20px 0px;
+}
+
+.product-comments-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.product-comments-score-container{
+    width: 300px;
+    height: 250px;
+}
+
+.product-comments-score-text{
+    font-weight: bold;
+    font-size: 50px;
+    height: 0px;
+}
+
+.product-comments-score-text span{
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.prudct-comments-score-icon-div{
+    display: flex;
+    flex-direction: row;   
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-comments-score-icon{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.product-comments-score-icon-text{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+    width: 200px;
+}
+
+.product-comments-add-comment-text{
+    font-size: 15px;
+    color: gray;
+}
+
+.products-comments-comment-button{
+    width: 100%;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: red;
+    cursor: pointer;
+}
+
+.product-comments-section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+    width: 65%;
+}
+
+.product-comments-sort{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.product-comments-sort button{
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.product-comments-title{
+    font-size: 30px;
+    height: 35px;
+    width: 330px;
+    border-bottom: 2px solid red;
+}

@@ -1,0 +1,122 @@
+.user-comment-container{
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+    display: flex;
+    flex-direction: column;
+}
+
+.user-comment-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.user-comment-user{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-comment-user img{
+    width: 60px;   
+    height: 60px;
+    border-radius: 100%;
+}
+
+.user-comment-user h3{
+    font-weight: bold;
+    color: black;
+}
+
+.user-comment-option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-comment-option button{
+    background-color: transparent;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.user-comment-option button:hover{
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+.user-comment-score-icon{
+    font-weight: bold;
+    height: 0px;
+}
+
+.user-comment{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.user-comment-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.user-comment-like-section{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.user-comment-like-section div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;;
+}
+
+.user-comment-like-section div button{
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.user-comment-like-section div button:hover{
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+.user-comment-color-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-comment-color{
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 100%;
+}
+
+.user-comment-color-text{
+    font-weight: lighter;
+}

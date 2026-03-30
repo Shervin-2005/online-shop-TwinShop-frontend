@@ -1,7 +1,7 @@
 .html ,body{
     margin: 0;
     padding: 0;
-    background-color: rgb(67, 75, 85);
+    background-color: white;
 }
 
 .header{
@@ -109,6 +109,7 @@
     text-decoration: none;
     color: rgb(29, 151, 151);
     transition: color 0.3s ease;
+    position: relative;
 }
 
 .sticky-nav-item:hover{
@@ -117,11 +118,24 @@
 .sticky-nav-sub-items{
     background-color: rgb(52, 237, 250);
     z-index: 1000;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    top: 103%;
+    max-height: 73vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 16.5vh;
 }
 .sticky-nav-sub-items a{
  text-decoration: none;
  font-size: medium;
 transition: color 0.3s ease;
+width: 150px;
+height: 15vh;
+text-align: start;
+padding: 10px;
 }
 .sticky-nav-sub-items a:hover{
  color: rgb(255, 0, 0);
@@ -130,12 +144,12 @@ transition: color 0.3s ease;
 .mobile-items{
   padding: 15px;
   display: flex;
-  gap: 50px;
+  gap: 0px;
   background-color: rgb(161, 241, 255);
   position: absolute;
-  height: 70vh;
+  height: 69.8vh;
   left: 13.5%;
-  top: 100%;
+  top: 103%;
   z-index: 1000;
   overflow-y: auto;
   overflow-x: hidden;
@@ -143,6 +157,7 @@ transition: color 0.3s ease;
 }
 .category {
   border: none;
+  font-size: small;
 }
 
 .category li{

@@ -1,0 +1,89 @@
+.product-gallery-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    gap: 50px;
+}
+
+.product-gallery-div{
+    width: 700px;
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.product-gallery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 300ms ease-in-out;
+
+}
+.product-gallery img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.product-gallery-arrow{
+     position: absolute;
+    cursor: pointer;
+    border: none;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    filter: drop-shadow(0px 0px 5px #555);
+    transition: opacity 0.3s ease-in-out;
+    z-index: 11;
+    opacity: 0.75;
+} 
+.product-gallery-arrow-left{
+    position: absolute;
+    left: 1rem;
+}
+.product-gallery-arrow-right{
+    position: absolute;
+    right: 1rem;
+}
+
+.product-gallery-slide-indicator{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-gallery-slide-indicator img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.slide-indicator{
+    opacity: 1;
+}
+
+.slide-indicator-inactive{
+    opacity: 0.25;
+}
+.product-gallery-close-button{
+    padding: 10px;
+    font-size: 30px;
+    background-color: black;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    cursor: pointer;
+}
