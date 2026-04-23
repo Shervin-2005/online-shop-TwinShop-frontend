@@ -1,0 +1,82 @@
+.slide-show-container{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.title{
+    font-weight: bold;
+    text-wrap-mode: nowrap;
+    margin: 40px 0px -10px 30px;
+    font-size: 50px;
+    color: darkblue;
+}
+
+.slides{
+    margin: 14px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.posters-1-container{
+     display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.posters-1-top{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.posters-1{
+    margin: 14px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.slide-show-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.add-button{
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    margin: 10px 20px -10px 0px;
+    border: solid 5px blue;
+    padding: 0px;
+    background-color: var(--primary-color-light);
+    border-radius: 100%;
+}
+
+.add-button:hover{
+    background-color: rgba(255, 255, 255, 0.315);
+}

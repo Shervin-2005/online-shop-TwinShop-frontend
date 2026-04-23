@@ -1,0 +1,38 @@
+.color-filter-container{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+
+.color-filter-button{
+     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px 0px;
+}
+
+.color-filter-button button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.color-filter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 90%;
+}

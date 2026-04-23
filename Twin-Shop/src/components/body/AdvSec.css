@@ -1,0 +1,32 @@
+.adv-pic-li{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: black;
+    margin: 2px;
+}
+
+.adv-sec-container{
+    width: 80%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+}
+
+.adv-sec-container ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.adv{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}

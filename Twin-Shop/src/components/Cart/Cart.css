@@ -1,0 +1,76 @@
+.cart-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.cart-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cart-total-price-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cart-total-price-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 250px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.337);
+    border-radius: 10px;
+}
+
+.cart-initial-total-price{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    color: gray;
+}
+
+.cart-total-price{
+     display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cart-total-store{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    color: green;
+}
+
+.cart-complete-buying-button{
+    align-self: center;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.cart-total-price-container h3{
+    color: gray;
+    font-weight: lighter;
+    width: 290px;
+    text-align: left;
+    font-size: 16px;    
+}

@@ -1,0 +1,42 @@
+.ib-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 250px;
+    height: 250px;
+    margin: 6px;
+    position: relative;
+}
+.ib-container img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+ .brand-options{
+    background-color: transparent;
+    font-weight: bold;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    left: 83%;
+    top: 2%;
+ }
+
+ .brand-options:hover{
+    background-color: rgba(27, 27, 27, 0.144);
+    border-radius: 50%;
+    transition: transform 300ms ease-in-out;
+ }
+
+ 

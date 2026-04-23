@@ -1,77 +1,32 @@
 import './footer.css'
-import logo1 from '../../images/Logo.png'
-import logo2 from '../../images/Logotxt.png'
-import Button from './button'
-import ListItem from './ListItem.jsx'
-import ShayanProfile from '../../images/Profile.png'
-import YoutubeIcon from '../../images/YouTube.png'
-import GitHubIcon from '../../images/GitHUB.png'
-import TelegramIcon from '../../images/Telegram.png'
-import LinkedInIcon from '../../images/LinkedIn.png'
-import Icon from './Icon.jsx'
+import footerBackground from "./footerBackground.jpg"
+import FooterButton from './FooterButton';
+import telegramImg from "./Telegram.png"
+import YouTubeImg from "./YouTube.png"
+import LinkedInImg from "./LinkedIn.png"
 
 
 function Footer(){
     return(
-        <div className="footer">
-            <div className='row1'>
-                <button className='top-button'>return to top ^</button>
-                <img className='logo1' src={logo1}></img>
-                <img className='logo2' src={logo2}></img>
-            </div>
-        <div className='row2'>
-            <pre>telephone poshtibani: 021-91000100  |  </pre>
-            <pre>021-61930000 | </pre>
-            <pre>we are online every day and every week</pre>
-            </div>
-         <div className='row3'>
-          <Button icon="🎖️" title="Garenty"/>
-          <Button icon="📦" title="7 rooz bargasht kala"/>
-          <Button icon="🎧" title="Every Day Every Week"/>
-          <Button icon="💵" title="Pay in Door"/>
-          <Button icon="📱" title="express Delivery"/>
-             </div>
-             <div className='row4'>
-
-                <div className='about-us-container'>
-                    <div>
-                        <img className='profile' src={ShayanProfile}></img>
-                        <ul>
-                            <Icon children={YoutubeIcon}/>
-                            <Icon children={LinkedInIcon}/>
-                            <Icon children={GitHubIcon}/>
-                            <Icon children={TelegramIcon}/>
-
-                        </ul>
-                    </div>    
+        <div className="footer-container">
+            <img src={footerBackground} className="footer-background"/>
+            <div className='footer-menu-container'>
+                <div className='footer-columns'>
+                    <div className='footer-column-1-container'>
+                    <button>Advertisement in Twin Shop</button>
+                    <button>Contact Us</button>
+                    <button>About Us</button>
+                    </div>
+                <div className='footer-column-2-container'>
+                        <FooterButton src={telegramImg}/>
+                        <FooterButton src={YouTubeImg}/>
+                        <FooterButton src={LinkedInImg}/>
+                </div>
                 </div>
 
-                <ul>
-                   <p>With Twin Shop</p> 
-                    <ListItem>otagh khabar digikala</ListItem>
-                    <ListItem>sell here</ListItem>
-                    <ListItem>otagh khabar digikala</ListItem>
-                </ul>
-                 <ul>
-                    <p>Khadmat Moshtarian</p>
-                    <ListItem>otagh khabar digikala</ListItem>
-                    <ListItem>sell here</ListItem>
-                    <ListItem>otagh khabar digikala</ListItem>
-                    <ListItem>Report Bug</ListItem>
-                    <ListItem>Report Bug</ListItem>
-                    <ListItem>Report Bug</ListItem>
+                <div className='footer-bottom'>© 2025-2026 Coping of All or Part of Twin-Shop Website is Possible only with a Written License</div>
 
-                </ul>
-                 <ul>
-                    <p>How to Buy in Twin</p>
-                    <ListItem>otagh khabar digikala</ListItem>
-                    <ListItem>sell here</ListItem>
-                    <ListItem>otagh khabar digikala</ListItem>
-                    <ListItem>otagh khabar digikala</ListItem>
-                    <ListItem>otagh khabar digikala</ListItem>
-                    <ListItem>otagh khabar digikala</ListItem> 
-                </ul>
-             </div>
+            </div>
         </div>
     );
 }

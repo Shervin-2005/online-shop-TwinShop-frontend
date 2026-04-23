@@ -1,29 +1,33 @@
 import './body.css'
-import {SlideShow} from "./ImageSlideShow.jsx";
+import {SlideShow} from "./SlideShow.jsx";
 import slides from '../../data/slideImagesData.js'
 import offerProducts from '../../data/slideOffersData.js'
-import pictures1 from '../../data/picturesData1.js'
-import Contents from '../../data/contentCreatorsData.js'
+import pictures1 from '../../data/AdvSec1Data.js'
+import Contents from '../../data/BrandsData.js'
 import OfferSlideShow from "./OfferSlideShow.jsx";
-import ButtonsSection2 from "./buttonsSection2.jsx";
-import ButtonsSection1 from "./buttonSection1.jsx";
-import PictureSection1 from './pictureSection1.jsx';
-import ProductSortSection from './ProductSortSection.jsx';
-import PictureSection2 from './pictureSection2.jsx';
-import PopularBrandsSection from './PopularBrandsSection.jsx';
+import Categories from './Categories.jsx';
+import BodyAdvBar from './BodyAdvBar.jsx'
+import Brands from './Brands.jsx';
+import AdvSec from './AdvSec.jsx';
+import AdvSec2 from './AdvSec2.jsx';
+import FavoriteProductsSection from './FavoriteProductsSection.jsx';
+import MostSellingProducts from './MostSellingProducts.jsx';
 function Body(){
    return(
         <div className="body">
-            <ButtonsSection1 data={Contents}/>
+            <Brands data={Contents}/>
             <SlideShow data={slides}/>
-            <ButtonsSection2 data={Contents}/>
             <OfferSlideShow data={offerProducts}/>
-            <PictureSection1 data={pictures1}/>
-            <ProductSortSection/>
-            <PictureSection2/>
-            <PopularBrandsSection/>
+            <AdvSec data={pictures1}/>
+            <BodyAdvBar/>
+            <AdvSec data={pictures1}/>
+            <Categories/>
+            <AdvSec2 data={pictures1}/>
+            <FavoriteProductsSection/>
+            <MostSellingProducts/>
+            <FavoriteProductsSection/>
         </div>
  );   
 }
 
-export default Body
+export default Body;

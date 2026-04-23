@@ -1,0 +1,22 @@
+*{
+    --primary-color : #2583ff;
+    --primary-color-light : #87bbff;
+    --active-color: #aa2222;
+    --category-color: #001838;
+}
+
+
+.component-controller button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 2px;
+    background-color: var(--primary-color);
+    font-weight: bold;
+}
+
+.component-controller button:hover{
+    background-color: var(--primary-color-light);
+}
+

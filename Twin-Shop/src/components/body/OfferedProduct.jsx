@@ -1,4 +1,5 @@
-import './body.css'; 
+import { Link } from 'react-router-dom';
+import './offeredProduct.css'; 
 
 function LimitedTitle(text){
     return text.length>30? text.substring(0,31)+ "...":text;
@@ -13,6 +14,7 @@ const getClassName = (data,idx) => {
 function OfferedProduct(props){
     return(
 <li className={getClassName(props.data,props.idx)}>
+                    <Link className='offered-product-link' to="/Product" target='_blank'>
 <img src={props.img} className='offered-product-image'/>
 <p className='offered-product-title'>{LimitedTitle(props.title)}</p>
 <p className='offered-product-price'>{props.price}</p>
@@ -20,6 +22,7 @@ function OfferedProduct(props){
 <p className='offered-product-preprice'>{props.prePrice}</p>
 <p className='off-percent'>{100-Math.floor(parseInt(props.price)/parseInt(props.prePrice)*100)}%</p>
 </div>
+</Link>
 </li>
 );
 }

@@ -1,0 +1,144 @@
+.ip-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 250px;
+    height: 400px;
+    margin: 6px;
+    position:relative;
+}
+.ip-cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ip-container img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.ip-cta button{
+    background-color: var(--active-color);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.new-price{
+    color: red;
+    font-weight: bold;
+}
+
+.initial-price{
+    text-decoration: line-through;
+    color: rgb(41, 41, 41);
+    font-weight: lighter;
+}
+
+.ip-cta button:hover{
+    transform: translateY(-5px);
+}
+
+.ip-container p{
+    font-size: 0.8rem;
+    color: #aaa;
+    text-align: justify;
+}
+
+
+.ip-container > span{
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: var(--category-color);
+}
+
+.ip-cta-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+ .product-options{
+    background-color: transparent;
+    font-weight: bold;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    left: 83%;
+    top: 2%;
+ }
+
+ .product-options:hover{
+    background-color: rgba(27, 27, 27, 0.144);
+    border-radius: 50%;
+    transition: transform 300ms ease-in-out;
+ }
+
+ 
+ .options-menu{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1000;
+    top: 3vh;
+    left:92%
+ }
+
+   .options-menu button:hover{
+    background-color: var(--primary-color-light);     
+    transition: transform 300ms ease-in-out;
+ }
+ .options-menu button{
+    gap: 0px;
+    margin:0px;
+    border-radius: 0px;
+    width: 9vh;
+    height: 3vh;
+    background-color: var(--primary-color);
+ }
+
+
+ .ip-cta-top span{
+    background-color: red;
+    padding: 5PX;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    border-radius: 10PX;
+    font-weight: bold;
+    font-size: large;
+ }
+
+ .ip-cta-category-brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ }
+
+ .count{
+    color: red;
+    font-weight: lighter;
+    font-size: small;
+ }
+
+ .score{
+   color: #6e6b6b;
+   font-weight: lighter;
+ }

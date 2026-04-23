@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import StickyNavdata from "../../data/StickyNavbarItems";
 import MobileProducts from './MobileProducts';
 import MobileProductsdata from '../../data/MobileProductsdata';
+import "./Header.css"
 const StickyNavbarItems = (props) => {
   const [openStickyNav, StickyNavOpenState] = useState(false);
   const [openSubItems, SubItemsOpenState] = useState(false);
@@ -12,9 +13,15 @@ const StickyNavbarItems = (props) => {
     currentChoose(item);
   };
 
+  useEffect(() =>{
+    if(!openStickyNav){
+      SubItemsOpenState(false);
+    }
+  },[openStickyNav]);
+
   return (
-    <div>
-      <a onClick={() => StickyNavOpenState(!openStickyNav)} href='#' className={props.className}>{props.content}</a>
+    <div className='sticky-nav-item-container'>
+      <a className='sticky-nav-item'  onClick={() => StickyNavOpenState(!openStickyNav)} href='#'>{props.content}</a>
       {openStickyNav && (
         <div className="sticky-nav-sub-items">
           {props.items.map((item, idx) => (

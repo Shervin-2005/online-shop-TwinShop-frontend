@@ -4,7 +4,8 @@ import chevronRight from "../../images/chevron-right.svg";
 import chevronLeft from "../../images/chevron-left.svg";
 import LogoTxtImg from "../../images/LogoTxt.png";
 import OfferTimer from './OfferTimer';
-import OfferedProduct from './OfferedProduct';;
+import OfferedProduct from './OfferedProduct';import { Link } from 'react-router-dom';
+;
 
 function OfferSlideShow({data}){
   const [slide, setSlide] = useState(0);
@@ -16,8 +17,8 @@ function OfferSlideShow({data}){
     setSlide(prev => (prev === 0 ? prev : prev - 1));
   };
     return(
-        <div className="offer-slide-show">
-          <div className='offers-slide-poster'>
+        <div className="offer-slide-show-container">
+          <div className='offers-slide-poster-container'>
             <p className='offers-text'>Amazing Offers</p>
             <OfferTimer duration={24 * 60 * 60 * 1000}/>
             <img src={LogoTxtImg} alt="LogoTxt" className="Logo"/>
@@ -25,13 +26,12 @@ function OfferSlideShow({data}){
              <button className={slide===0 ? 'hidden':"product-arrow product-arrow-left"} onClick={prevSlide}>
                       <img className='chevron' src={chevronLeft} alt="chevron-left" />
                     </button>
-                  <div className="offer-slide-div" style={{ transform: `translateX(${-12.1 * slide}%)`}}>
+                  <div className="offer-slide-div" style={{ transform: `translateX(${-12.7 * slide}%)`}}>
                    {data.map((item,idx)=> (
                       <OfferedProduct data={data} key={idx} idx={idx} img={item.src} alt={item.alt} className="offered-product" title={item.title} price={item.price} prePrice={item.prePrice}/>
                     ))}
-                    
                   </div>
-                  <div className='view-all'>
+                  <div className='view-all-container'>
                   <button className='btn-view-all'>➡️</button>
                   <p className='view-all-text'>View All</p>
                   </div>

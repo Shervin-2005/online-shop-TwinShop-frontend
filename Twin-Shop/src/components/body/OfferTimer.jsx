@@ -1,4 +1,4 @@
-import './body.css';
+import './OfferedProduct.css';
 import React, {useState,useEffect} from 'react';
 
 
