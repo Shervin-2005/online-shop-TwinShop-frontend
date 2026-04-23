@@ -22,6 +22,7 @@ import AdvBar from "./components/header/AdvBar.jsx";
 import ProductPage from "./components/ProductPage/ProductPage.jsx";
 import GalleryPage from "./components/ProductPage/ProductGallery.jsx";
 import SearchPage from "./components/Search/SearchPage.jsx";
+import Cart from "./components/Cart/Cart.jsx";
 
 function App() {
     return (
@@ -42,6 +43,8 @@ function App() {
        <Route path="/EditAdv" element={<EditAdv/>}/>
         <Route path="/gallery" element={<GalleryPage/>} />
         <Route path="/Search" element={<SearchPage/>} />
+        <Route path="/Admin" element={<Admin/>} />
+        <Route path="/Cart" element={<Cart/>} />
     </Routes>
     </div> 
   );

@@ -4,8 +4,10 @@ import "./ItemProduct.css";
 import imageTest from ".././main.webp";
 import OptionsMenu from "./OptionsMenu";
 
-const ItemProduct = () => {
+const ItemProduct = (props) => {
       const [openOptions, OptionsOpenState] = useState(false);
+      const {title, image, price , limit , score , preprice} = props.data;  
+
     return (
         <div className="ip-container">
                  <div className="ip-cta-top">
@@ -18,15 +20,15 @@ const ItemProduct = () => {
                       </div>
       )}
                 </div>
-                <img src={imageTest} alt="" />
+                <img src={image} alt="" />
                 <div className="ip-cta-category-brand">
-                    <h2 className="count">there in only 2 more</h2>
-                    <h3 className="score">4.8⭐</h3>
+                    <h2 className="count">there in only {limit} more</h2>
+                    <h3 className="score">{score}⭐</h3>
                 </div>
-                    <span>HP Victus 15 15.6-inch Gaming Laptop Model fa2082wm with Intel Core i5-13420H, 16GB DDR4 3200MHz RAM, 512GB SSD, NVIDIA RTX 4050 6GB, FHD 144Hz Display-W</span>
+                    <span>{title}</span>
                 <div className="ip-cta">
-                    <span className="new-price">499.99 $</span>
-                    <span className="initial-price">530 $</span>
+                    <span className="new-price">{price}</span>
+                    <span className="initial-price">{preprice}</span>
                 </div>
         </div>
     );

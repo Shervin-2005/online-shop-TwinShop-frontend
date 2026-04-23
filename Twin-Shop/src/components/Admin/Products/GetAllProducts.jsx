@@ -1,10 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ItemProduct from "./ItemProduct";
 import "./GetAllProducts.css"
 import Loading from "../Loading";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const GetAllProducts = ()=> {
+
+    const [listProducts,setListProducts] = useState([]);
+    const [isShowLoading, setIsShowLoading] = useState(true);
+    useEffect(()=> {
+        getAllData();
+    },[]);
+
+    const getAllData = () => {
+        axios
+        .get(`/products`)
+        .then((response)=> {setListProducts(response) , setIsShowLoading(false)})
+        .catch((error) => {console.log(error.message)} , setIsShowLoading(false));
+    };
+
     return (
         <div className="search-container">
             <div className="search-buttons-container">
@@ -15,16 +30,11 @@ const GetAllProducts = ()=> {
                  </Link>
             </div>
         <div className="loading-container">
+            {isShowLoading && <Loading/>}
         <div className="get-container">
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
-         <ItemProduct/>
+        {
+            listProducts.map(element => <ItemProduct key={element.id} data={element}/>)
+        }
         </div>
         </div>
         </div>

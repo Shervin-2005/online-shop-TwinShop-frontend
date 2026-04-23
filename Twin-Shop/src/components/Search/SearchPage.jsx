@@ -3,9 +3,14 @@ import "./SearchPage.css"
 import SearchProductCard from './SearchProductCard';
 import productImage from "../ProductPage/main.webp"
 import SearchPageFilter from './SearchPageFilter.jsx';
+import Header from '../header/Header.jsx';
+import Footer from '../footer/Footer.jsx';
+import axios from 'axios';
 
 function SearchPage() {
   return (
+       <div className='search-page-container-home'>
+       <Header/>
     <div className='search-page-container'>
         <SearchPageFilter/>
       <div className='search-page-main-container'>
@@ -231,6 +236,8 @@ function SearchPage() {
         </div>
 
       </div>
+    </div>
+      <Footer/>
     </div>
   )
 }

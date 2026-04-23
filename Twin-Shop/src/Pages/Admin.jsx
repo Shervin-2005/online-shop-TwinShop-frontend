@@ -12,6 +12,18 @@ import GetAllBrands from "../components/Admin/Brands/GetAllBrands.jsx";
 import GetAllUsers from "../components/Admin/Users/GetAllUsers.jsx"
 import Posters from "../components/Admin/Posters/Posters.jsx";
 import Advertisements from "../components/Admin/Advertisement/Advertisements.jsx";
+import axios from "axios";
+
+//Axios Config
+axios.defaults.baseURL="https://dkstatics-public.digikala.com";
+axios.interceptors.request.use((request)=>{
+  console.log(request);
+  return request;
+});
+axios.interceptors.response.use((response)=>{
+  console.log(response);
+  return response.data;
+});
 
 function Admin() {
 
